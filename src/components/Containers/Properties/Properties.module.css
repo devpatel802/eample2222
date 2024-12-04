@@ -1,0 +1,32 @@
+.propertylist {
+  color: var(--header);
+  margin-bottom: 15px;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+}
+
+.tabButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  font-weight: bold;
+  flex: 1;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  text-align: center;
+  outline: none;
+  transition: background-color 0.3s;
+  margin-bottom: 15px;
+}
+
+.active {
+  background-color: var(--tab);
+  color: white;
+  font-weight: bold;
+}

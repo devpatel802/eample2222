@@ -1,0 +1,304 @@
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+header .workFlow {
+  color: var(--header);
+}
+
+/* Custom button container style */
+.custom_button_container button {
+  width: 40px;
+  height: 35px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  background-color: transparent; /* Default background color */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+/* Hover effect for the buttons */
+.custom_button_container button:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Light grey color on hover */
+}
+
+/* Active button style (if you have any active state changes) */
+.custom_button_container button.activeButton {
+  background-color: rgba(0, 0, 0, 0.2); /* Slightly darker grey when active */
+}
+
+
+.buttons .sort {
+  /* background-color: var(--border); DEV */
+  border-radius: 10%;
+}
+
+/* Searchbar styles */
+.workflow_search {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 15px;
+}
+
+.workflow_search:focus {
+  border-color: var(--header);
+}
+
+/* Workflow Add Menu */
+.workflow_add_menu {
+  margin-top: -53px;
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+  background: #F2F2F2;
+  border-radius: 12px;
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 99;
+}
+
+.workflow_add_menu textarea {
+  width: 100%;
+  padding: 10px;
+  background: #F9FAFB;
+  border: 1px solid #F9FAFB;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.workflow_add_menu .menu_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.workflow_add_menu .menu_title img {
+  cursor: pointer;
+}
+
+/* Suggest and Skip buttons */
+.workflow_add_menu .suggest_workflow {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 10px 0;
+  background: #000;
+  color: #fff;
+  padding: 6px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s all ease-in-out;
+}
+
+.workflow_add_menu .suggest_workflow:hover {
+  background: #F2F2F2;
+  color: #000;
+}
+
+.workflow_add_menu .skip {
+  width: 100%;
+  text-align: center;
+  color: #000;
+  background-color: #F2F2F2;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s all ease-in-out;
+  padding: 10px;
+}
+
+.workflow_add_menu .skip:hover {
+  background-color: #F9FAFB;
+}
+/* ///////////////////////Add Workflow to.../////////////////////////////// */
+
+
+.add_menu.filter_menu {
+  margin-top: -53px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  position: relative;
+  background: #F9FAFB;
+  z-index: 99;
+  right: 0;
+  text-align: left;
+  border-radius: 12px;
+  display: none; /* Default: hidden */
+}
+
+.add_menu.filter_menu.active {
+  display: block; /* Make it visible when active */
+}
+
+/* .menu_space {
+  padding: 15px;
+} */
+
+
+.menu_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_title img {
+  cursor: pointer;
+}
+
+/* .add_item_form {
+  margin-top: 20px;
+} */
+
+.form-group {
+  width: 100%;
+}
+
+label {
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input {
+  background: #fff;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px 0 15px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.choose_workflow {
+  width: 100%;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  padding: 11px 10px;
+  font-size: 12px;
+  color: #737373;
+  appearance: none;
+  background: #fff;
+  margin: 10px 0 15px;
+}
+
+.choose_workflow:focus {
+  border: none;
+  outline: none;
+}
+
+.addButton {
+  width: 100%;
+  border: 2px solid transparent;
+  background: #000;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+  letter-spacing: 1px;
+}
+
+/* /////////////////////////sort///////////////////////////// */
+
+.add_menu {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  background: #F2F2F2;
+  border-radius: 12px;
+  z-index: 99;
+  right: 0;
+  text-align: left;
+  display: none;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  border: 1px solid #F9FAFB;
+}
+
+.add_menu.filter_menu {
+  display: block; /* Show the menu when it's open */
+}
+
+/* .menu_space {
+  padding: 15px;
+} */
+
+.menu_title {
+  display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #F9FAFB;
+      padding: 10px 10px;
+      border-bottom: 3px solid #98A2B3;
+      border-radius: 12px 12px 0px 0px;
+}
+
+.menu_title p {
+  margin: 0;
+  font-size: 14px;
+  color: #000000;
+}
+
+.menu_title p a {
+  text-decoration: none;
+}
+
+/*  */
+
+.form_group {
+  display: block;
+  margin: 10px 10px;
+}
+
+.form_group label {
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.form_group input {
+  margin-bottom: -3px;
+  margin-right: 10px;
+  accent-color: #090909;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  top: -5px;
+}
+
+.form_group input:focus {
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  /* background-color: rgb(242, 242, 242); */
+  color: rgb(7, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+

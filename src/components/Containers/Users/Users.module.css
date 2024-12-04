@@ -1,0 +1,14 @@
+.users {
+  color: var(--header);
+  margin-bottom: 15px;
+}
+
+.select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  outline: none;
+  color: var(--des);
+  margin-bottom: 15px;
+}

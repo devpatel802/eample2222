@@ -1,0 +1,32 @@
+.container {
+  background-color: var(--subCon);
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.head {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  color: #232323;
+}
+
+.num {
+  font-weight: bold;
+  color: var(--header);
+}
+
+span {
+  color: var(--des);
+  font-weight: normal;
+}
+
+.three {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

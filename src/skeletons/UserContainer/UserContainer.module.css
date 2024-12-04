@@ -1,0 +1,29 @@
+.address {
+  background-color: var(--subCon);
+  border-radius: 10px;
+  display: flex;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.aplha {
+  margin-right: 15px;
+  color: white;
+}
+
+.aplha .a {
+  padding: 5px;
+  margin-bottom: 2px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  color: #232323;
+}

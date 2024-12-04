@@ -1,0 +1,78 @@
+.performance {
+  color: var(--header);
+  margin-bottom: 15px;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+}
+
+.tab button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.tabButton {
+  flex: 1;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  text-align: center;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.tabButton:hover {
+  background-color: #e2e2e2;
+}
+
+.active {
+  background-color: var(--tab);
+  color: white;
+  font-weight: bold;
+}
+
+.tabContent {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.tabButton.active {
+  background-color: var(--tab);
+  color: white;
+  font-weight: bold;
+}
+
+/* search  */
+.searchContainer {
+  position: relative;
+  width: 100%;
+}
+
+.reports_search {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 15px;
+}
+
+.reports_search:focus {
+  border-color: var(--header);
+}
+
+.searchIcon {
+  position: absolute;
+  right: 14px;
+  top: 35%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

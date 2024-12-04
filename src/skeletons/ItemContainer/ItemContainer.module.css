@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  max-width: 100vh;
+  margin-bottom: 15px;
+}
+
+.color {
+  width: 12px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.main {
+  width: 96%;
+  background-color: var(--subCon);
+  padding: 12px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.main h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.des {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main p {
+  color: var(--des);
+  font-size: 14px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+}
+
+.date img {
+  margin: 0px 5px;
+}
